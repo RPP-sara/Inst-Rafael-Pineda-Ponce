@@ -1,0 +1,94 @@
+<html>
+<head>
+    <title>estudiantes y docentes</title>
+   
+</head>
+
+<body> <style> body {
+    font-family: 'Times New Roman', Times, serif;
+    background: #fae8f6;
+} 
+
+.menu { 
+    list-style: none;
+    padding: 0;  
+    display:flex;
+    gap: 100px;
+}
+.menu li{ 
+    position: relative;
+    background: #f7a3e2;
+    padding: 10 px;
+    color:  rgb(24,32,32);
+    cursor:auto;
+    border-radius: 10px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50;
+    background:rgb(240, 164, 223); 
+    color: rgb(240, 165, 206);
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+}
+.submenu table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+.submenu td, .submenu th {
+    border:  1px solid #ddd;
+    padding: 8px;
+}
+
+.menu li:hover  .submenu {
+    display: block;
+}
+   
+.boton-llamativo{
+    background-color: #a3c2e6;
+    color: #02254d;
+    border: #021933;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 5px 25px 35px #dae2eb ;
+}
+ 
+.boton-llamativo:hover{
+background-color: rgb(228, 38, 111);
+transform: scale(1.2);
+}
+        </style>
+          </head>
+
+<body> 
+<ul class="menu"> 
+    <li> 
+        DOCENTES
+        <div class="submenu">
+        <table> 
+            <tr><th> DOCENTES </th></tr>
+            <td><a href="docentes y estudiantes.pdf"target=_blank><button>Docentes 2025</button></a></td>
+           
+            
+        </table>
+
+            <li> 
+                ESTUDIANTES
+                <div class="submenu">
+                <table> 
+                    <tr><th> ESTUDIANTES </th></tr>
+                    <td><a href="enlace "target=_blank><button>Estudiantes 2025</button></a></td>
+                    
+                </table>
+
+        </div>
+    </li>
+</body>
+<a href="index.html" class="boton-llamativo">Pagina Pricipal</a>

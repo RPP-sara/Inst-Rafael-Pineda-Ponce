@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+       background: #f8d8f0;;
+      margin: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 100vh;
+    }
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 100px;
+      padding-left: 100px;
+      background-color: #eee;
+    }
+
+    .menu li {
+      background: #f7c0f7;
+      padding: 10px;
+      color: rgb(24, 32, 32);
+      cursor: pointer;
+      border-radius: 25px;
+    }
+
+    .boton-llamativo {
+      background-color: #a3c2e6;
+      color: #02254d;
+      border: none;
+      padding: 12px 15px;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 5px 25px 35px #dae2eb;
+    }
+
+    .boton-llamativo:hover {
+      background-color: rgb(228, 38, 111);
+      transform: scale(1.2);
+    }
+
+    .imagen-giratoria {
+      width: 200px;
+      height: 150px;
+      animation: girarYInverso 6s linear infinite;
+      transform-style: preserve-3d;
+    }
+
+    @keyframes girarYInverso {
+      from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(-360deg);
+      }
+    }
+
+    .contenedor-principal {
+      padding: 10px;
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 2px solid black;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Menú -->
+  <ul class="menu">
+    <li><a href=""><button class="boton-llamativo">Página Principal</button></a></li>
+    <li><a href="sobre nosotros.html"><button class="boton-llamativo">Sobre Nosotros</button></a></li>
+    <li><a href="oferta academica.html"><button class="boton-llamativo">Oferta Académica</button></a></li>
+    <li><a href="alumnos y docentes.html"><button class="boton-llamativo">Maestros y Alumnos</button></a></li>
+    <li><a href="galeria.html"><button class="boton-llamativo">Galería</button></a></li>
+    <li><a href="contado.html"><button class="boton-llamativo">Contacto</button></a></li>
+  </ul>
+
+  <!-- Imagen fuera de la tabla -->
+  
+  <!-- Tabla con imagen giratoria adentro -->
+  <center>
+    <table>
+      <tr>
+        <td rowspan="2">
+         <center> <img src="logo del colegio.png" alt="300" width="300" class="imagen-giratoria"></center>
+        </td>
+        <td>Colegio Oficial Técnico Rafael Pineda Ponce</td>
+      </tr>
+      <tr>
+        <td>
+          <table width="100%">
+            <tr>
+              <th>Información</th>
+              <th>Detalles</th>
+            </tr>
+            <tr>
+              <td>Nombre del colegio</td>
+              <td>Instituto Técnico Oficial Rafael Pineda Ponce</td>
+            </tr>
+            <tr>
+              <td>Ubicación</td>
+              <td>Aldea Santiago, Tela, Atlántida</td>
+            </tr>
+            <tr>
+              <td>Especialidad</td>
+              <td>Técnico</td>
+            </tr>
+            <tr>
+              <td>Contacto</td>
+              <td>Dilciaflores@gmail.com</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </center>
+<div class="contenedor-principal">
+    <img src="colegio 1.jfif" alt="300" width="350">
+  </div>
+
+</body>
+</html>
